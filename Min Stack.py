@@ -17,7 +17,7 @@ class Minstack:
 	def __init__(self):
 		self.items = [] #The current stack#
 		self.min_items = [] #The min stack#
-    
+
     def push(self, x):
     	self.items.append(x) #Add element x on top of the current stack."
 		if len(self.min_items) == 0 or x <= self.min_items[-1]:
