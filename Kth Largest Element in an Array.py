@@ -28,5 +28,5 @@ class Solution2:
 			if num > k_nums[0]:
 				heapq.heappush(k_nums, num)
 				heapq.heappop(k_nums)
-		#Push any number larger than the smallest number in the current largest K numbers into it and remove the first element.#
+		#Add any number larger than the smallest number in the current largest K numbers to it and remove the first element.#
 		return k_nums[0]
