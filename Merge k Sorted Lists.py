@@ -1,3 +1,14 @@
+"""
+Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+
+
+
+来源：力扣（LeetCode）
+链接：https://leetcode-cn.com/problems/merge-k-sorted-lists
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+"""
+
+
 class Solution:
 
 	def mergeKLists(self, lists: List[ListNode]) -> ListNode:
