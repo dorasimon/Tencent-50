@@ -12,7 +12,7 @@ class Solution1:
 	def findKthLargest(self, nums: [int], k: int):
 		nums = sorted(nums)
 		return nums[-k]
-		#Simply sort the list and get the Kth number from the end.#
+		#Simply sort the list and get the Kth number from the end.
 
 
 import heapq
@@ -23,10 +23,10 @@ class Solution2:
 		k_nums = []
 		for num in nums[:k]:
 			heapq.heappush(k_nums, num)
-		#Create a list that always stores the largest K numbers. Heapq ensures that the smallest element gets pushed to the index position 0.#
+		#Create a list that always stores the largest K numbers. Heapq ensures that the smallest element gets pushed to the index position 0.
 		for num in nums[k:]:
 			if num > k_nums[0]:
 				heapq.heappush(k_nums, num)
 				heapq.heappop(k_nums)
-		#Add any number larger than the smallest number in the current largest K numbers to it and remove the first element.#
+		#Add any number larger than the smallest number in the current largest K numbers to it and remove the first element.
 		return k_nums[0]
