@@ -14,3 +14,4 @@ class Solution:
 	def majorityElement(self, nums: List[int]) -> int:
 		nums.sort()
 		return nums[len(nums) // 2]
+		#Sort the list so that the majority-number window will always cover the middle element. Fetch that element.
