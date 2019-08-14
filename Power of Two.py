@@ -9,6 +9,7 @@ class Solution1:
 				if n == 1:
 					return True
 					break
+					#Check the last digit of n. If it's odd, return false; if it's even, divide n by 2 until it becomes odd or 1.
 		return False
 
 
