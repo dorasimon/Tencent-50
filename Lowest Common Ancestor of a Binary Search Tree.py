@@ -22,4 +22,4 @@ class Solution:
 				Node = Node.right
 			else:
 				return Node
-#Compare the current node to p and q to see if they are on the same side. Once they are on different sides, the current node is the LCA.
+#Compare the current node with p and q to see if they are on the same side. Once they are on different sides, the current node is the LCA.
