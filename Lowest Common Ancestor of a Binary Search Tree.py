@@ -13,7 +13,7 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 
 class Solution:
 
-	def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+	def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
 		Node = root
 		while Node:
 			if Node.val > p.val & Node.val > q.val:
