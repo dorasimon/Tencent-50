@@ -11,7 +11,7 @@ class Solution:
 	
 	def maxSubArray(self, nums: List[int]) -> int:
 		maxSubSum = nums[0]
-		#Set the first element to be the default result.
+		#Set the first element to be the default sum.
 		subSum = 0
 		for num in nums:
 			subSum += num
