@@ -26,4 +26,5 @@ class Solution:
 				num1[p] = nums1[p1]
 				p1 -= 1
 			p -= 1
-		nums1[:p2 + 1] = nums[:p2 + 1]
+		nums1[:p2 + 1] = nums[:p2 + 1
+		#If nums2 still has elements left, replace nums1's beginning with nums2's residual elements.
