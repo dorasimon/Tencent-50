@@ -18,3 +18,4 @@ class Solution:
 			l.append(np.prod(nums1))
 			nums1 = list(nums)
 		return l
+		#Can't simply use nums1 = nums, because nums will be modified as well.
