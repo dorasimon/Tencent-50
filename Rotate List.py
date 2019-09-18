@@ -16,12 +16,15 @@ class Solution:
 			tmp.append(head.val)
 			head = head.next
 		length = len(tmp)
+		#Convert the linked list to a list and calculate the length.
 		if length == 0 or k == 0:
 			return iHead
 		else:
 			tmp = tmp[length - k % length:] + [:length - k % length]
+			#Reorder the list.
 		newHead = node = ListNode(None)
 		for i in range(length):
 			node.next = ListNode(tmp[i])
 			node = node.next
 		return newHead.next
+		#Convert the reordered list to a linked list.
